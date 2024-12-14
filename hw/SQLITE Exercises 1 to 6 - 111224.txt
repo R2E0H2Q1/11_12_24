@@ -1,0 +1,50 @@
+SQLITE Exercises 1 to 6 - 11/12/24
+
+
+1.1. Create/Drop table: CREATE TABLE shopping (id INTEGER PRIMARY KEY, name TEXT, amount INTEGER);
+
+- Answer: This action creates a table called 'shopping', with 3 columns with specific parameters: ID, NAME and AMOUNT. 
+
+1.2. DROP TABLE shopping
+
+- Answer: This action deletes a table called 'shopping'.
+
+2. Rename table:
+
+ALTER table shopping RENAME to shop | Answer: Renames the table called 'shopping' to 'shop'
+ALTER table shop RENAME to shopping  | Answer: Renames the table called 'shop' back to 'shopping'
+
+
+3. Insert rows into table:
+INSERT INTO shopping VALUES (1, 'Avokado', 5);
+INSERT INTO shopping VALUES (2, 'Milk', 2);
+INSERT INTO shopping VALUES (3, 'Bread', 3);
+INSERT INTO shopping VALUES (4, 'Chocolate', 8);
+INSERT INTO shopping VALUES (5, 'Bamba', 5);
+INSERT INTO shopping VALUES (6, 'Orange', 10);
+
+- Answer: The action insert adds rows of information to the table.
+
+4. Display table: select * from shopping
+
+- Answer: Displays all content on the table called 'shopping', using *
+
+
+5. ?
+SELECT id, name FROM shopping
+
+
+- Answer: It provides the data from the columns called: 'ID' and 'NAME' from table named 'shopping'.
+So an appropriate question to open this exercise could be: ** Can you provide the data from columns ID and NAME in table shopping? **
+
+
+6. ?
+SELECT * FROM shopping WHERE amount > 5
+SELECT * FROM shopping WHERE amount = 2
+SELECT * FROM shopping WHERE name LIKE 'Bamba'
+
+
+- Answer: The first action will provide all information where the data on the column 'amount' are greater than 5.
+	  The second action will provide all information where the data on the column 'amount' is equal to 2.
+	  The third action will provide all information where the data on the column 'name' is equal to 'Bamba'.
+So a good question to open this exercise is: Can you provide in 3 actions the data with an amount > 5, with an amount = 2 and with a name = 'Bamba'?
